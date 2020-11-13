@@ -5,10 +5,13 @@
    Just invokes a system call that shuts down the OS. */
 
 #include <syscall.h>
+#include <stdlib.h>
 
 int
-main (void)
+main (int argc, char **argv)
 {
-  halt ();
+  // halt();
+  printf("hi there!\n");
+  exit(32);
   /* not reached */
 }
